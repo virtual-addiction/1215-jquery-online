@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <title>jQuery - basics</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/jq-min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //$(selector).action();
+                //$("h1").hide();
+                $("main article").hide(500);
+                
+                $('a.a1').click(function(){
+                    $('main article').hide(500);
+                    $('main article:nth-of-type(1)').show('slow');
+                });
+                $('a.a2').click(function(){
+                    $('main article').hide(500);
+                    $('main article:nth-of-type(2)').show('fast');
+                });
+                $('a.a3').click(function(){
+                    $('main article').hide(500);
+                    $('main article:nth-of-type(3)').show('fast');  
+                });
+                
+                $("a.h1").click(function(){
+                    $('header').fadeToggle();
+                });
+            }); // end doc ready
+        </script>
+    </head>
+    <body>
+        <!--header>h1{Hello}+h2{sub heading}-->
+        <header>
+            <h1>Hello</h1>
+            <h2>sub heading</h2>
+        </header>
+        <!--main>article*3>h2{Article heading $}+p>lorem-->
+        <main>
+           <!--ul>li*3>a[#]{article $}-->
+           <ul>
+               <li><a href="#" class="a1">article 1</a></li>
+               <li><a href="#" class="a2">article 2</a></li>
+               <li><a href="#" class="a3">article 3</a></li>
+               <li><a href="#" class="h1">header</a></li>
+           </ul>
+           <h2>Check out these articles!</h2>
+            <article>
+                <h2>Article heading 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit quas impedit, itaque ullam rerum omnis illum dignissimos eligendi perspiciatis. Consectetur laboriosam sint fugiat, illum sit, quis quod asperiores autem.</p>
+            </article>
+            <article>
+                <h2>Article heading 2</h2>
+                <p>Molestiae sed, error dignissimos accusantium enim rem harum aliquam corporis animi vitae ipsa rerum nesciunt dolorem nulla quibusdam totam eaque nam iste sequi saepe iure possimus beatae deleniti, corrupti eos!</p>
+            </article>
+            <article>
+                <h2>Article heading 3</h2>
+                <p>Ut autem blanditiis quisquam dolor iusto! Vel deleniti aperiam voluptatem dicta, quos, non atque maxime adipisci mollitia, quo libero nemo saepe velit expedita maiores odit, dolor eos fugiat doloribus! Reprehenderit.</p>
+            </article>
+        </main>
+        <footer>
+            <p>Copyright 2025</p>
+        </footer>
+    </body>
+</html>
