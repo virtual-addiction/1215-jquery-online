@@ -1,0 +1,41 @@
+html { font-size: 10px;}
+body {
+    font-family: Verdana, sans-serif;
+    margin: 2em;
+}
+h1{
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    font-weight: normal;
+}
+p {
+    font-size: 1.6em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+ul {
+    font-size: 1.6rem;
+    display: flex;
+    gap: .7em;
+    background-color: #ccc;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+ul a {
+    text-decoration: none;
+    color: #069;
+    font-weight: bold;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+}
+main {
+    margin: 0 auto 1em;
+    max-width: 1200px;
+}
