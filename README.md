@@ -1,4 +1,4 @@
 # 1215-jquery-online
-demo for using github together
+demo for using github all together
 
-Hi from virtual addiction
+Hi from the turtle!
